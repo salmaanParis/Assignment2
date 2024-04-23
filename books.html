@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Display</title>
+    <!-- Latest Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .card {
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Allow the height to adjust according to the content */
+    justify-content: center;
+
+.card-img-top {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+
+}
+#h1{
+    justify-content: center;
+}
+.row{
+    justify-content: center;
+}
+-----------
+
+/*  */
+
+
+
+
+/* .book-details h1 {
+    font-size: 24px; /* Adjust the font size of the book title */
+    /* margin-top: 10px; Add some space above the book title */
+
+
+.book-details p {
+    font-size: 16px; /* Adjust the font size of the description */
+    margin-top: 10px; /* Add some space above the description */
+} */
+
+
+.recommendations {
+    margin-top: 20px; /* Add some space above the recommendations */
+}
+
+
+
+.recommendation p {
+    font-size: 14px; 
+    margin-top: 5px; 
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.pagination .page-item .page-link {
+    color: blue; 
+}
+
+body{
+    background: #dfe9f5;
+        }
+
+
+.container{
+    margin-right: 50px;
+}
+    </style>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Library Catalog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Title</a></li>
+                        <li><a class="dropdown-item" href="#">Author</a></li>
+                        <li><a class="dropdown-item" href="#">Subject</a></li>
+                        <li><a class="dropdown-item" href="#">Series</a></li>
+                    </ul>
+                </li>
+            <!-- </ul> -->
+
+            <!-- Search form -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Go</button>
+            </form>  </ul>
+
+            <!-- User dropdown -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SALMAN PARIS S
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="home.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Books Display Section -->
+    <section class="container mt-4 mb-3">
+        <h2 id="heading">NEW RELEASES</h2><br>
+        
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="1.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">The Echo Chamber by John Boyne</h5>
+                        <p class="card-text"> A thought-provoking novel exploring the impact of social media and online echo chambers .</p>
+                        <a href="book1.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="2.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Hail Mary by Andy Wei</h5>
+                        <p class="card-text"> A thrilling science fiction adventure following an astronaut who wakes up alone on a spaceship.</p>
+                        <a href="book2.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="3.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Klara and the Sun by Kazuo Ishiguro</h5>
+                        <p class="card-text">A poignant and imaginative tale set in a near-future world where an Artificial Friend named Klara.</p>
+                        <a href="book3.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="4.jpg" class="card-img-top" alt="Book 4">
+                    <div class="card-body">
+                        <h5 class="card-title">The Midnight Library by Matt Haig</h5>
+                        <p class="card-text">A heartwarming and uplifting story about a woman who finds herself in a mysterious library .</p>
+                        <a href="book4.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="5.jpg" class="card-img-top" alt="Book 5">
+                    <div class="card-body">
+                        <h5 class="card-title">A Slow Fire Burning by Paula Hawkins</h5>
+                        <p class="card-text">- A gripping psychological thriller revolving around the murder of a young man on a houseboat in London.</p>
+                        <a href="book5.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="6.jpg" class="card-img-top" alt="Book 6">
+                    <div class="card-body">
+                        <h5 class="card-title">The God of Small Things by Arundhati Roy</h5>
+                        <p class="card-text">"The God of Small Things" is a celebrated novel that tells the story of fraternal twins grow up in the southern India.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="7.jpg" class="card-img-top" alt="Book 7">
+                    <div class="card-body">
+                        <h5 class="card-title">RAM C/O ANANDHI by AKHIL P DHARMAJAN</h5>
+                        <p class="card-text">-  it is a literary gem that leaves a lasting impression. Whether you’re a fan of contemporary fiction or simply appreciate.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="8.jpg" class="card-img-top" alt="Book 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Ettavum Priyappetta Ennodu by Nimna Vijay</h5>
+                        <p class="card-text">- This Malayalam novel and he love to read new books. I got it and it's good in quality of print and the pages and book is thick.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="9.jpg" class="card-img-top" alt="Book 9">
+                    <div class="card-body">
+                        <h5 class="card-title">It Starts With Us by Kunex</h5>
+                        <p class="card-text">-She lives in Texas with her husband and their three boys. She is the founder of The Bookworm Box, non-profit book Texas.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards for other books -->
+            
+        </div>
+    </section>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
